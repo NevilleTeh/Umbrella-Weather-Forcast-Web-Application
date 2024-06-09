@@ -1,0 +1,142 @@
+.home {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-y: auto; /* Allow vertical scrolling if needed */
+    width: 100vw; /* Ensure it doesn't exceed viewport width */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.main-content {
+    flex: 1;
+    padding-top: 120px;
+}
+
+.image-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px; /* Add gap to ensure space between items */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.image-container {
+    background-color: #e9c584;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #623700;
+    width: 300px;
+    height: 350px;
+    box-sizing: border-box; /* Ensure padding and border are included in width and height */
+}
+
+.content-image {
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.image-text {
+    margin-top: 10px;
+}
+
+.weather-container {
+    text-align: center;
+    color: #623700;
+    margin: 20px 0;
+}
+
+.weather-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 20px;
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+.weather-card {
+    background: linear-gradient(135deg, #E0A12E, #F2C94C);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    color: #4a3b2c;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    box-sizing: border-box; /* Ensure padding and border are included in width and height */
+}
+
+.weather-icon {
+    width: 60px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.weather-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.weather-card .condition {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.weather-card .location {
+    font-size: 16px;
+}
+
+.weather-card .temp {
+    font-size: 14px;
+}
+
+/* Media Queries */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .image-container {
+        width: 45%;
+        height: 300px;
+        flex: 0 0 45%;
+        margin: 10px;
+        box-sizing: border-box; /* Ensure padding and border are included in width and height */
+    }
+}
+
+@media (min-width: 810px) and (max-width: 1080px) {
+    .image-container {
+        width: 45%;
+        height: 300px;
+        flex: 0 0 45%;
+        margin: 10px;
+        box-sizing: border-box; /* Ensure padding and border are included in width and height */
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .image-container {
+        width: 48%;
+        height: auto;
+        margin: 10px;
+        box-sizing: border-box; /* Ensure padding and border are included in width and height */
+    }
+}
+
+@media (max-width: 599px) {
+    .image-container {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+        box-sizing: border-box; /* Ensure padding and border are included in width and height */
+    }
+    .content-image {
+        height: auto;
+    }
+}
