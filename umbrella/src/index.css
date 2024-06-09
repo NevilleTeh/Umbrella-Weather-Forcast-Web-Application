@@ -1,0 +1,15 @@
+/* Global styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure body and html take full height */
+  font-family: Arial, sans-serif;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; /* Ensure the App component can stretch */
+  
+}
+
