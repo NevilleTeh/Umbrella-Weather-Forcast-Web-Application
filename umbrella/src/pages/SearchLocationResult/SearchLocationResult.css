@@ -1,0 +1,95 @@
+.search-location-result {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #eec271 40%, #ecddb4 100%);
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100vw;
+    box-sizing: border-box;
+  }
+  
+  .main-content {
+    flex: 1;
+    text-align: center;
+    color: #623700;
+    position: relative;
+  }
+  
+  .map-container {
+    width: 90%;
+    height: 500px;
+    margin: 0 auto;
+    border: 2px solid #4a3b2c;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    z-index: 0;
+  }
+  
+  .map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+  
+  .weather-info-container {
+    position: absolute;
+    top: 20px;
+    left: 35%;
+    transform: translateX(-50%);
+    width: 185px; /* Adjusted width */
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+  
+  .weather-header {
+    background-color: #E0A12E;
+    border-radius: 15px 15px 0 0;
+    padding: 1px; /* Adjusted padding */
+    text-align: center;
+    font-size: 1em;
+    color: #4a3b2c;
+  }
+  
+  .weather-content {
+    background-color: #E9C584;
+    border-radius: 0 0 15px 15px;
+    padding: 5px; /* Adjusted padding */
+    text-align: center;
+  }
+  
+  .weather-icon {
+    width: 100px; /* Adjusted size */
+    height: 100px; /* Adjusted size */
+  }
+  
+  .weather-info h2 {
+    font-size: 1.2em; /* Adjusted size */
+    color: #4a3b2c;
+  }
+  
+  .weather-info h3 {
+    font-size: 1em; /* Adjusted size */
+    color: #4a3b2c;
+  }
+  
+  .weather-info p {
+    font-size: 0.8em; /* Adjusted size */
+    color: #4a3b2c;
+  }
+  
+  .pin-marker {
+    position: absolute;
+    width: 20px; /* Adjust size */
+    height: 20px; /* Adjust size */
+    z-index: 2;
+    top: 50%; /* Adjust position */
+    left: 50%; /* Adjust position */
+    transform: translate(-50%, -50%); /* Center the pin */
+  }
+  
